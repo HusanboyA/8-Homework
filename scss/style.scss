@@ -1,0 +1,259 @@
+$font: Ubuntu;
+$transition : all .7s linear;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+    font-size: 16px;
+
+}
+
+
+
+
+.containerTop {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    background-color: #F9F9F9;
+    flex-wrap: wrap;
+    
+    .left {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  
+    .right {
+      padding: 72px 100px 0 84px;
+      width: 50%; 
+  
+      p {
+        font-family: $font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        color: #505977;
+  
+        .span {
+          font-family: $font;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 33.6px;
+          text-align: left;
+          color: #2A254B;
+        }
+      }
+  
+      button {
+        padding: 16px 32px;
+        margin-bottom: 54px;
+        background-color: #fff;
+        margin-top: 196px;
+        border: 1px solid #fff;
+        transition: $transition;
+  
+        &:hover {
+          background-color: #505977;
+          color: #fff;
+        }
+      }
+    }
+  
+    
+    @media (max-width: 575.98px) {
+      max-width: auto;
+      flex-direction: column;
+  
+      .left,
+      .right {
+        width: 100%;
+        padding: 20px;
+  
+        button {
+          width: 100%; 
+        }
+      }
+    }
+  
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      max-width: 540px; 
+  
+      .left,
+      .right {
+        width: 100%; 
+        padding: 20px;
+  
+        button {
+          width: 100%; 
+        }
+      }
+    }
+  
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      max-width: 720px;
+  
+      .left,
+      .right {
+        width: 50%; 
+        padding: 20px;
+  
+        button {
+          width: 100%; 
+        }
+      }
+    }
+  
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      max-width: 960px;
+  
+      .left,
+      .right {
+        width: 50%; 
+      }
+    }
+  
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      max-width: 1140px;
+  
+      .left,
+      .right {
+        width: 50%;
+      }
+    }
+  
+    @media (min-width: 1400px) {
+      max-width: 1320px;
+  
+      .left,
+      .right {
+        width: 50%; 
+      }
+    }
+  }
+  
+  .containerBottom {
+    margin: auto;
+    width: 100%;
+  
+    h2 {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 33.6px;
+      text-align: center;
+      margin-top: 80px;
+    }
+  
+    .boxs {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 100px;
+      margin-top: 36px;
+      justify-content: center;
+      gap: 22px;
+  
+      .box {
+        padding: 48px;
+        width: 305px;
+        background-color: #F9F9F9;
+  
+        .h1 {
+          font-family: $font;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          text-align: left;
+          color: #505977;
+        }
+      }
+    }
+  
+
+    @media (max-width: 575.98px) {
+      max-width: auto; 
+      
+      .boxs {
+        justify-content: center;
+  
+        .box {
+          width: 100%; 
+          padding: 20px;
+        }
+      }
+    }
+  
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      max-width: 540px; 
+  
+      .boxs {
+        justify-content: center;
+  
+        .box {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+    }
+  
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      max-width: 720px;
+  
+      .boxs {
+        justify-content: center;
+  
+        .box {
+          width: calc(50% - 22px); 
+          padding: 20px;
+        }
+      }
+    }
+  
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      max-width: 960px;
+  
+      .boxs {
+        justify-content: center;
+  
+        .box {
+          width: calc(33.333% - 22px); 
+          padding: 20px;
+        }
+      }
+    }
+  
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      max-width: 1140px;
+  
+      .boxs {
+        justify-content: center;
+  
+        .box {
+          width: calc(33.333% - 22px); 
+          padding: 20px;
+        }
+      }
+    }
+  
+    @media (min-width: 1400px) {
+      max-width: 1320px; 
+  
+      .boxs {
+        justify-content: center;
+  
+        .box {
+          width: calc(25% - 22px);
+          padding: 20px;
+        }
+      }
+    }
+  }
+  
+
+
+
+
+
